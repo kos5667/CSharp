@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-namespace CSharp
+namespace ConsoleApp.BasicCSharp
 {
     // OOP(은닉성/상속성/다형성)
     /*
@@ -12,7 +12,7 @@ namespace CSharp
         public int hp;
         public int attack;
 
-        public Player ()
+        public Player()
         {
             Console.WriteLine("Player 생성자 호출!");
         }
@@ -25,7 +25,7 @@ namespace CSharp
 
     class A : Player
     {
-        public A ()
+        public A()
         {
             Console.WriteLine("A 생성자 호출!");
         }
@@ -36,7 +36,7 @@ namespace CSharp
         int hp;
         public B() : base(100)
         {
-            this.hp = 10;
+            hp = 10;
             base.hp = 100;
             Console.WriteLine("B 생성자 호출!");
         }
@@ -44,11 +44,11 @@ namespace CSharp
 
     class Program
     {
-        static void Main(string[] args)
-        {
-            A a = new A();
-            B b = new B();
-        }
+        //static void Main(string[] args)
+        //{
+        //    A a = new A();
+        //    B b = new B();
+        //}
     }
 
 }
