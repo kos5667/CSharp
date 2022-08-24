@@ -3,4 +3,5 @@
 ## Big-O 표기법
 
 ### Log
-https://github.com/kos5667/CSharp/issues/1#issue-1349255333
+![image](https://user-images.githubusercontent.com/50124541/186401779-bbfa47ee-d44d-44b5-b00a-8443aeec4335.png)
+
