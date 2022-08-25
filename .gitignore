@@ -8,3 +8,7 @@
 /ConsoleApp/.vs/ConsoleApp
 /.vs
 /ConsoleApp/bin/Debug/net6.0
+/Exercise/obj/Debug/net6.0
+/Exercise/obj
+/ConsoleApp/.vs/ProjectEvaluation
+*.csproj
