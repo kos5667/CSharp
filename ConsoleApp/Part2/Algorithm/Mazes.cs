@@ -165,36 +165,36 @@ namespace ConsoleApp.Part2.Algorithm {
             }
         }
 
-        //static void Main(string[] args) {
-        //    Mazes board = new Mazes();
-        //    Player player = new Player();
-        //    board.Initalize(25, player);
-        //    player.Initalize(1, 1, board);
+        static void Main(string[] args) {
+            Mazes board = new Mazes();
+            Player player = new Player();
+            board.Initalize(25, player);
+            player.Initalize(1, 1, board);
 
-        //    Console.CursorVisible = false;
+            Console.CursorVisible = false;
 
-        //    const int WAIT_TICK = 1000 / 30;
+            const int WAIT_TICK = 1000 / 30;
 
-        //    int lastTick = 0;
-        //    while (true) {
-        //        #region 프레임 관리
-        //        // FPS 프레임 (60프레임 OK 30프레임 이하로 NO)
-        //        // 만약에 경과한 시간이 1/30초보다 작다면
-        //        int currentTick = System.Environment.TickCount;
-        //        if (currentTick - lastTick < WAIT_TICK)
-        //            continue;
-        //        int deltaTick = currentTick - lastTick;
-        //        lastTick = currentTick;
-        //        #endregion
-        //        // 입력
+            int lastTick = 0;
+            while (true) {
+                #region 프레임 관리
+                // FPS 프레임 (60프레임 OK 30프레임 이하로 NO)
+                // 만약에 경과한 시간이 1/30초보다 작다면
+                int currentTick = System.Environment.TickCount;
+                if (currentTick - lastTick < WAIT_TICK)
+                    continue;
+                int deltaTick = currentTick - lastTick;
+                lastTick = currentTick;
+                #endregion
+                // 입력
 
-        //        // 로직
-        //        player.Update(deltaTick);
+                // 로직
+                player.Update(deltaTick);
 
-        //        // 렌더링
-        //        Console.SetCursorPosition(0, 0);
-        //        board.Render();
-        //    }
-        //}
+                // 렌더링
+                Console.SetCursorPosition(0, 0);
+                board.Render();
+            }
+        }
     }
 }
