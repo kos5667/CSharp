@@ -179,9 +179,9 @@ namespace ConsoleApp.Part2.DataStructure {
             graph.Dijkstra(0);
         }
 
-        static void Main(string[] args) {
-            Graph_ graph_ = new Graph_();
-            graph_.Initalize();
-        }
+        //static void Main(string[] args) {
+        //    Graph_ graph_ = new Graph_();
+        //    graph_.Initalize();
+        //}
     }
 }
