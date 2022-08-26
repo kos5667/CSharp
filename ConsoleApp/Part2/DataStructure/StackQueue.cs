@@ -53,9 +53,9 @@ namespace ConsoleApp.Part2.DataStructure {
             list.RemoveLast();
         }
 
-        static void Main(string[] args) {
-            StackQueue stackQueue = new StackQueue();
-            stackQueue.Initalize();
-        }
+        //static void Main(string[] args) {
+        //    StackQueue stackQueue = new StackQueue();
+        //    stackQueue.Initalize();
+        //}
     }
 }
