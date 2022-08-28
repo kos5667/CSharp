@@ -66,9 +66,9 @@ namespace ConsoleApp.Part2.DataStructure {
             Console.WriteLine(GetHeight(root));
         }
 
-        static void Main(string[] args) {
-            Tree tree = new Tree();
-            tree.Initalize();
-        }
+        //static void Main(string[] args) {
+        //    Tree tree = new Tree();
+        //    tree.Initalize();
+        //}
     }
 }
