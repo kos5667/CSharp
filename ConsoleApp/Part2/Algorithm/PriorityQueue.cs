@@ -1,17 +1,14 @@
-﻿using ConsoleApp.TextRPG2;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp.Part2.DataStructure {
-
-    // 우선순위 큐
-    class PriorityQueue_<T> where T : IComparable<T> {
+namespace ConsoleApp.Part2.Algorithm {
+    class PriorityQueue<T> where T : IComparable<T> {
 
         List<T> _heap = new List<T>();
-        
+
         // 0(logN)
         public void Push(T data) {
             // 힙의 맨 끝에 새로운 데이터를 삽입한다.
@@ -35,6 +32,7 @@ namespace ConsoleApp.Part2.DataStructure {
             }
 
         }
+
         // 0(logN)
         public T Pop() {
             // 반환할 데이터를 따로 저장
@@ -57,7 +55,7 @@ namespace ConsoleApp.Part2.DataStructure {
                 if (left <= lastIndex && _heap[next].CompareTo(_heap[left]) < 0)
                     next = left;
                 // 오른값이 현재값(왼쪽 이동 포함)보다 크면, 오른쪽으로 이동
-                if(right <= lastIndex && _heap[next].CompareTo(_heap[right]) < 0)
+                if (right <= lastIndex && _heap[next].CompareTo(_heap[right]) < 0)
                     next = right;
 
                 // 왼쪽/오른쪽 모두 현재값보다 작으면 종료
@@ -75,39 +73,7 @@ namespace ConsoleApp.Part2.DataStructure {
 
             return ret;
         }
-        public int Count() {
-            return _heap.Count;
-        }
-    }
 
-    class Knight : IComparable<Knight> {
-        public int Id { get; set; }
-
-        public int CompareTo(Knight other) {
-            if (Id == other.Id)
-                return 0;
-            return Id > other.Id ? 1 : -1;
-        }
-    }
-
-    class PriorityQueue_ {
-
-        void Initalize() {
-            PriorityQueue_<Knight> q = new PriorityQueue_<Knight>();
-            q.Push(new Knight() { Id = 20});
-            q.Push(new Knight() { Id = 30});
-            q.Push(new Knight() { Id = 40});
-            q.Push(new Knight() { Id = 10});
-            q.Push(new Knight() { Id = 05 });
-
-            while(q.Count() > 0) {
-                Console.WriteLine(q.Pop().Id);
-            }
-        }
-
-        //static void Main(string[] args) {
-        //    PriorityQueue_ priorityQueue_  = new PriorityQueue_();
-        //    priorityQueue_.Initalize();
-        //}
+        public int Count { get { return _heap.Count; } }
     }
 }
